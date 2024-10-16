@@ -1,0 +1,30 @@
+{
+  "name": "codebase-tracker",
+  "version": "1.0.0",
+  "description": "A tool to track React/Next.js component usage and Node.js function usage across a full codebase.",
+  "main": "lib/tracker.js",
+  "bin": {
+    "component-usage-tracker": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.25.8",
+    "@babel/traverse": "^7.25.7",
+    "commander": "^10.0.1",
+    "glob": "^9.3.5"
+  },
+  "keywords": [
+    "component-tracker",
+    "function-tracker",
+    "frontend-backend-usage",
+    "react",
+    "nextjs",
+    "nodejs",
+    "CLI"
+  ],
+  "author": "Kanailal Manna",
+  "license": "MIT"
+}
