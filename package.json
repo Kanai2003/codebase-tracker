@@ -1,6 +1,6 @@
 {
   "name": "codebase-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool to track React/Next.js component usage and Node.js function usage across a full codebase.",
   "main": "lib/tracker.js",
   "bin": {
