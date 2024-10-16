@@ -4,6 +4,16 @@ A CLI tool to track the usage of React/Next.js components and Node.js functions 
 
 Just install it globally and use a simple command to generate report
 
+***1. install globally***
+```bash
+npm i -g codebase-tracker
+```
+***2. Generate Report***
+```bash
+npx codebase-tracker --directory ./ --output component-function-usage-report.txt
+```
+***3. Access the reoprt in your project directory***
+
 ## Features
 
 - **Comprehensive Tracking**: Analyze all JavaScript files in the specified directory to track function usage.
