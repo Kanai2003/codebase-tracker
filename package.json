@@ -23,7 +23,12 @@
     "react",
     "nextjs",
     "nodejs",
-    "CLI"
+    "CLI",
+    "report",
+    "report-generator",
+    "codebase-tracker",
+    "codebase-usage",
+    "analyser"
   ],
   "author": "Kanailal Manna",
   "license": "MIT"
