@@ -7,8 +7,11 @@ const path = require('path');
 const packageJson = require('../package.json');
 
 program
-  .option('--directory <dir>', 'The directory to scan', './')
-  .option('--output <file>', 'The file to save the report', 'component-function-usage-report.txt')
+  .name(packageJson.name)
+  .description(packageJson.description + '\n\nThis tool tracks component and function usage in your codebase, respecting your .gitignore file.')
+  .version(packageJson.version)
+  .option('-d, --directory <dir>', 'The directory to scan', './')
+  .option('-o, --output <file>', 'The file to save the report', 'component-function-usage-report.txt')
   .action((options) => {
     const directory = path.resolve(process.cwd(), options.directory);
     const output = path.resolve(process.cwd(), options.output);

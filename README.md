@@ -12,11 +12,12 @@ npm i -g codebase-tracker
 ```bash
 npx codebase-tracker --directory ./ --output component-function-usage-report.txt
 ```
-***3. Access the reoprt in your project directory***
+***3. Access the report in your project directory***
 
 ## Features
 
-- **Comprehensive Tracking**: Analyze all JavaScript files in the specified directory to track function usage.
+- **Comprehensive Tracking**: Analyze all JavaScript and TypeScript files (`.js`, `.jsx`, `.ts`, `.tsx`) in the specified directory.
+- **Smart Ignoring**: Automatically respects your project's `.gitignore` file to skip unwanted files (like `node_modules`, build artifacts, etc.).
 - **Detailed Reports**: Generate reports that include:
   - Each function's definition location.
   - All import statements.
@@ -31,25 +32,29 @@ To use `codebase-tracker`, you can install it globally using npm:
 npm install -g codebase-tracker
 ```
 
-Or clone the repository and link it locally:
+Or you can use it directly with `npx` without installing globally:
 
 ```bash
-git clone https://github.com/Kanai2003/codebase-tracker.git
-cd codebase-tracker
-npm link
+npx codebase-tracker --help
 ```
 
 ## Usage
 
-Run the CLI command in your terminal:
+Run the CLI command in your terminal. You can run it from the root of your project:
 
 ```bash
-npx codebase-tracker --directory <path_to_your_codebase> --output <output_file_name>
+npx codebase-tracker --directory ./ --output report.txt
 ```
+
+### Options
+
+- `--directory <path>`: The directory to scan (default: `./`)
+- `--output <path>`: The file to save the report (default: `component-function-usage-report.txt`)
+
 **Example**
 
 ```bash
-npx codebase-tracker --directory ./ --output component-function-usage-report.txt
+npx codebase-tracker --directory ./src --output ./reports/usage-report.txt
 ```
 
 ## Sample Output
